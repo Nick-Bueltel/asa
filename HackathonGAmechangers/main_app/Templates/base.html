@@ -14,27 +14,13 @@
     <header>
         <ul>
             <li><a href="{% url 'home' %}">TxStArt</a></li>&nbsp;&nbsp;&nbsp;&nbsp;
-            {% if user.is_authenticated %}
-                <li><a href="{% url 'skill_list' %}">My Skills</a></li>&nbsp;|&nbsp;
-                <li><a href="{% url 'skill_create' %}">Add Skill</a></li>
-            {% endif %}
-        </ul>
-        {% if user.is_authenticated %}
-            <ul>
-                <li>Welcome {{user.username}}! &nbsp;|&nbsp;</li>
-                <li><a href="{% url 'logout' %}">LOG OUT</a></li>
-            </ul>
-        {% else %}
-            <ul>
-                <li><a href="{% url 'signup' %}">SIGN UP</a> &nbsp;|&nbsp;</li>
-                <li><a href="{% url 'login' %}">LOG IN</a></li>
-            </ul>
-        {% endif %}
+            
+   
     </header>
     <main>
         {% block content %}
         {% endblock %}
     </main>
-    <footer>COPYRIGHT &copy; 2018 WDI</footer>
+    <footer>COPYRIGHT &copy; 2019</footer>
 </body>
 </html>
