@@ -14,12 +14,18 @@
 </head>
 <body>
     <header>
-        <ul>
-            <li class="logo"><a href="{% url 'home' %}">TxStArt</a></li>
-            <li><a href="{% url 'profile' %}">profile</a></li>
-            <li><a href="{% url 'myposts' %}">myposts</a></li>
-            <li><a href="{% url 'login' %}">login</a></li>
-        </ul>
+            <ul class="right">
+                    <!-- changes below -->
+                    <li class="logo"><a href="{% url 'home' %}">TxStArt</a></li>
+                    {% if user.is_authenticated %}
+                    <li><a href="{% url 'profile' %}">profile</a></li>
+                    <li><a href="{% url 'myposts' %}">myposts</a></li>
+                    <li><a href="{% url 'logout' %} ">logout</a></li>
+                    {% else %}
+                      <li><a href="{% url 'login' %}">Log In</a></li>
+                    {% endif %}
+                  </ul>
+
             
    
     </header>
