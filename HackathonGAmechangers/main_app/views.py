@@ -18,3 +18,8 @@ def profile(request):
 
 def add_photo(request):
     return render(request, 'home.html' )
+def login(request):
+    return render(request, 'login.html')
+
+def myposts(request):
+    return render(request, 'myposts.html')
