@@ -10,3 +10,8 @@ def home(request):
 def profile(request):
     return render(request, 'profile.html')
 
+def login(request):
+    return render(request, 'login.html')
+
+def myposts(request):
+    return render(request, 'myposts.html')
