@@ -8,5 +8,5 @@ def home(request):
     return render(request, 'home.html')
 
 def profile(request):
-    return HttpResponse('<h1>PROFILE PAGE</h1>')
+    return render(request, 'profile.html')
 
