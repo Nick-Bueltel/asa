@@ -1,5 +1,17 @@
 # GraffitiFind ReadMe 
 
+## GAmeChangers
+
+Allison Waldrop - Lead Designer
+
+Andrew Miscoe - Database Management, CSS junkie, Software Engineer
+
+Kipaya Kapiga - Scrum Master, Designer
+
+Nick Bueltel - GitHub Manager, Software Engineer
+
+
+
 ## An introduction of your app along with a screenshot (one is all you need to "introduce" your application).
 
 * [screenshot here]
