@@ -2,3 +2,4 @@ HackathonGAmechangers/HackathonGAmechangers/__pycache__/urls.cpython-37.pyc
 HackathonGAmechangers/HackathonGAmechangers/__pycache__/settings.cpython-37.pyc
 HackathonGAmechangers/main_app/__pycache__/views.cpython-37.pyc
 HackathonGAmechangers/main_app/__pycache__/urls.cpython-37.pyc
+*.pyc
