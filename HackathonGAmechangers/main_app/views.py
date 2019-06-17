@@ -1,6 +1,7 @@
 from django.shortcuts import render, redirect
 from django.views.generic.edit import CreateView, UpdateView, DeleteView
 from django.http import HttpResponse
+from django.views.generic import ListView
 import uuid
 import boto3
 from .models import Photo, Scene
@@ -8,6 +9,10 @@ from .models import Photo, Scene
 S3_BASE_URL = 'https://s3-us-west-1.amazonaws.com/'
 BUCKET = 'txstreetart'
 # Create your views here.
+
+class SceneCreate(CreateView):
+    model = Scene
+    fields = '__all__'
 
 def home(request):
     return render(request, 'home.html')

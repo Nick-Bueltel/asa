@@ -7,6 +7,7 @@ urlpatterns = [
     path('login/', views.login, name="login"),
     path('scenes/', views.scenes_index, name="index"),
     path('scenes/<int:scene_id>/', views.scenes_detail, name='detail'),
+    path('scenes/create/', views.SceneCreate.as_view(), name='scenes_create'),
     path('myposts/', views.myposts, name="myposts"),
     path('add_photo/', views.add_photo, name='add_photo'),
 ]

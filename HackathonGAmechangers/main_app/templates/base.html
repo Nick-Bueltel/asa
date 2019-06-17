@@ -19,10 +19,11 @@
                     <li class="logo"><a href="{% url 'home' %}">TxStArt</a></li>
                     {% if user.is_authenticated %}
                     <li><a href="{% url 'profile' %}">profile</a></li>
-                    <li><a href="{% url 'myposts' %}">myposts</a></li>
                     <li><a href="{% url 'logout' %} ">logout</a></li>
                     {% else %}
                       <li><a href="{% url 'login' %}">Log In</a></li>
+                      <li><a href="{% url 'scenes_create' %}">Add a Scene</a></li>
+                      <li><a href="{% url 'index' %}">View All My Scenes</a></li>
                     {% endif %}
                   </ul>
 
