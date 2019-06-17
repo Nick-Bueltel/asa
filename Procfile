@@ -1,1 +1,1 @@
-web: gunicorn <HackathonGAmeChangers>.wsgi
+web: gunicorn <HackathonGAmechangers>.wsgi
