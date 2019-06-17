@@ -11,5 +11,5 @@ urlpatterns = [
     path('scenes/<int:pk>/update', views.SceneUpdate.as_view(), name='scenes_update'),
     path('scenes/<int:pk>/delete', views.SceneDelete.as_view(), name='scenes_delete'),
     path('myposts/', views.myposts, name="myposts"),
-    path('add_photo/', views.add_photo, name='add_photo'),
+    path('scenes/<int:scene_id>/add_photo/', views.add_photo, name='add_photo'),
 ]
