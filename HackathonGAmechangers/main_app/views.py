@@ -3,7 +3,8 @@ from django.views.generic.edit import CreateView, UpdateView, DeleteView
 from django.http import HttpResponse
 import uuid
 import boto3
-from .models import Photo
+from .models import Photo, Scene
+
 S3_BASE_URL = 'https://s3-us-west-1.amazonaws.com/'
 BUCKET = 'txstreetart'
 # Create your views here.
@@ -13,6 +14,10 @@ def home(request):
 
 def profile(request):
     return render(request, 'profile.html')
+
+def scenes_index(request):
+    scenes = Scene.objects.all()
+    return render(request,'scenes/index.html', { 'scenes': scenes })
 
 #todo
 
