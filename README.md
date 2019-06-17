@@ -35,9 +35,6 @@ Nick Bueltel - GitHub Manager, Software Engineer
 
 - link here
 
-## Pitch Deck
-- https://docs.google.com/presentation/d/1oMsYr9WfkJy16YtmxMgc2wlvOXkWsuXfixgaV7X4oLU/edit?usp=sharing
-
 ## IceBox
 
 - Description of any **future enhancements** planned.
