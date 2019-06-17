@@ -13,5 +13,10 @@
         <a href="{% url 'scenes_delete' scene.id %}">Delete</a>
       </div>
 </div>
+{% for photo in scene.photo_set.all %}
+      <img class="responsive-img card-panel" src="{{photo.url}}">
+    {% empty %}
+      <div class="card-panel teal-text center-align">No Photos Uploaded</div>
+    {% endfor %}
 
 {% endblock %}
