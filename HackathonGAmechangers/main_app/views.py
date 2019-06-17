@@ -14,6 +14,15 @@ class SceneCreate(CreateView):
     model = Scene
     fields = '__all__'
 
+class SceneUpdate(UpdateView):
+    model = Scene
+    fields = ['location', 'description']
+
+class SceneDelete(DeleteView):
+    model = Scene
+    success_url = '/scenes/'
+
+    
 def home(request):
     return render(request, 'home.html')
 

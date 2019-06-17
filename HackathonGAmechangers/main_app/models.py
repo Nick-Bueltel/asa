@@ -11,6 +11,9 @@ class Scene(models.Model):
     def __str__(self):
         return self.location
 
+    def get_absolute_url(self):
+        return reverse('detail', kwargs={'scene_id': self.id})
+
 class Photo(models.Model):
     url = models.CharField(max_length=200)
     

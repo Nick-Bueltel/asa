@@ -8,6 +8,10 @@
     <span class="card-title">{{ scene.location }}</span>
     <p>Description: {{ scene.description }}</p>
   </div>
+  <div class="card-action">
+        <a href="{% url 'scenes_update' scene.id %}">Edit</a>
+        <a href="{% url 'scenes_delete' scene.id %}">Delete</a>
+      </div>
 </div>
 
 {% endblock %}
