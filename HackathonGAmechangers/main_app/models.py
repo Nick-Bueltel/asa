@@ -16,4 +16,9 @@ class Scene(models.Model):
 
 class Photo(models.Model):
     url = models.CharField(max_length=200)
+    scene = models.ForeignKey(Scene, on_delete=models.CASCADE)
+
+    def __str__(self):
+        return f"Photo for scene_id: {self.scene_id} @{self.url}"
+    
     
