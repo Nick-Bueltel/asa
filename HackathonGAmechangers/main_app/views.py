@@ -4,7 +4,7 @@ from django.http import HttpResponse
 from django.views.generic import ListView
 import uuid
 import boto3
-from .models import Photo, Scene
+from .models import Scene
 
 S3_BASE_URL = 'https://s3-us-west-1.amazonaws.com/'
 BUCKET = 'txstreetart'
@@ -22,7 +22,7 @@ class SceneDelete(DeleteView):
     model = Scene
     success_url = '/scenes/'
 
-    
+
 def home(request):
     return render(request, 'home.html')
 
