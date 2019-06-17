@@ -6,4 +6,7 @@ from django.contrib.auth.models import User
 
 class Photo(models.Model):
     url = models.CharField(max_length=200)
+
+class PicDetails(models.Model):
+    location = models.Charfield(max_length=200)
     
