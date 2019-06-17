@@ -4,7 +4,7 @@ from django.http import HttpResponse
 import uuid
 import boto3
 from .models import Photo
-from django.contrip.auth import login, authenticate
+from django.contrib.auth import login, authenticate
 from django.contrib.auth.forms import UserCreationForm
 
 S3_BASE_URL = 'https://s3-us-west-1.amazonaws.com/'
@@ -40,4 +40,3 @@ def signup(request):
     else:
         form = UserCreationForm()
     return render(request, 'signup.html', {'form': form})
-    
