@@ -13,8 +13,9 @@
 
 </head>
 <body>
-    <header>
-            <ul class="right">
+    <nav>
+      <div class="nav-wrapper">      
+      <ul id="nav-mobile" class=>
                     <!-- changes below -->
                     <li class="logo"><a href="{% url 'home' %}">TxStArt</a></li>
                     {% if user.is_authenticated %}
@@ -28,8 +29,8 @@
                   </ul>
 
             
-   
-    </header>
+                </div>          
+              </nav>
     <main>
         {% block content %}
         {% endblock %}
