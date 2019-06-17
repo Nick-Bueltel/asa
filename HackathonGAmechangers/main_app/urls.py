@@ -8,6 +8,6 @@ urlpatterns = [
     path('login/', views.login, name="login"),
     path('myposts/', views.myposts, name="myposts"),
     path('add_photo/', views.add_photo, name='add_photo'),
-    path('r^signup/$', core_views.signup, name='signup'),
+    path('signup/', core_views.signup, name='signup'),
 
 ]

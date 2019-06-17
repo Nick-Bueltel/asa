@@ -17,8 +17,6 @@ def home(request):
 def profile(request):
     return render(request, 'profile.html')
 
-#todo
-
 def add_photo(request):
     return render(request, 'home.html' )
 def login(request):
@@ -35,7 +33,6 @@ def signup(request):
             username = form.cleaned_data.get('username')
             raw_password = form.cleaned_data.get('password1')
             user = authenticate(username=username, password=raw_password)
-            login(request, user)
             return redirect('home')
     else:
         form = UserCreationForm()
