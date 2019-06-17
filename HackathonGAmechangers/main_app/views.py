@@ -19,6 +19,10 @@ def scenes_index(request):
     scenes = Scene.objects.all()
     return render(request,'scenes/index.html', { 'scenes': scenes })
 
+def scenes_detail(request, scene_id):
+    scene = Scene.objects.get(id=scene_id)
+    return render(request,'scenes/detail.html', { 'scene': scene })
+
 #todo
 
 def add_photo(request):
